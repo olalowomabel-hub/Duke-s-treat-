@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Duke's Treat | Made to Make You Smile</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#faf7f2;
+color:#333;
+}
+
+header{
+background:#6A1B9A;
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h1{
+font-size:32px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h2{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#5D4037;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-size:18px;
+}
+
+section{
+padding:70px 8%;
+}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+font-size:38px;
+color:#6A1B9A;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 10px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+}
+
+.contact{
+background:#6A1B9A;
+color:white;
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+font-size:18px;
+}
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+.about{
+grid-template-columns:1fr;
+}
+
+.hero h2{
+font-size:40px;
+}
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Duke's Treat</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#menu">Menu</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h2>Freshly Baked Happiness</h2>
+
+<p>Made to Make You Smile</p>
+
+<a href="#menu" class="btn">View Menu</a>
+
+</div>
+
+</section>
+
+<section id="menu">
+
+<h2 class="title">Our Delicious Treats</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80">
+<h3>Birthday Cakes</h3>
+<p>Beautiful custom cakes for every celebration.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=800&q=80">
+<h3>Cupcakes</h3>
+<p>Soft, creamy and delicious cupcakes.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80">
+<h3>Cookies</h3>
+<p>Crunchy homemade cookies baked fresh daily.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80">
+<h3>Bread</h3>
+<p>Fresh bread with rich aroma and great taste.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Duke's Treat</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=80">
+
+<div>
+
+<h3>Freshly Baked Every Day</h3>
+
+<br>
+
+<p>
+At Duke's Treat, we specialize in freshly baked cakes,
+bread, cookies, pastries and other delicious treats.
+Every product is prepared with quality ingredients,
+love and care to ensure every bite makes you smile.
+</p>
+
+<br>
+
+<a href="#contact" class="btn">Order Now</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2 class="title" style="color:white;">Contact Us</h2>
+
+<p><strong>Business:</strong> Duke's Treat</p>
+
+<p><strong>Phone:</strong> 08148452071</p>
+
+<p><strong>Email:</strong> dukestreat@email.com</p>
+
+<p><strong>Hours:</strong> Monday - Saturday | 8:00 AM - 7:00 PM</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Duke's Treat. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
